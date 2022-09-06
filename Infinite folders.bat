@@ -1,5 +1,5 @@
 @echo off
-title Infinite folders
+title Infinite folders.bat
 color 0c
 mode con cols=20 lines=1
 cls
