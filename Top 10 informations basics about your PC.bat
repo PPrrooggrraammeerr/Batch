@@ -1,12 +1,12 @@
 @echo off
-title Top 10 information basics about your PC.bat
+title Top 10 informations basics about your PC.bat
 color 0a
 mode con cols=100 lines=25
-goto :Top_10_information_basics_about_your_PC
-:Top_10_information_basics_about_your_PC
+goto :Top_10_informations_basics_about_your_PC
+:Top_10_informations_basics_about_your_PC
 cls
 timeout /t 0 > nul
-echo Top 10 information basics about your PC
+echo Top 10 informations basics about your PC
 timeout /t 10 > nul
 cls
 goto :top1
@@ -101,4 +101,3 @@ cls
 goto :exit
 :exit
 exit
-
