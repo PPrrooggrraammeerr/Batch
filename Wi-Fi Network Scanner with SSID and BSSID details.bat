@@ -1,5 +1,5 @@
 @echo off
-title SSID_and_BSSID.bat
+title Wi-Fi Network Scanner with SSID and BSSID details.bat
 color 0a
 mode con cols=100 lines=35
 goto :IFs
