@@ -19,7 +19,3 @@ cls
 goto :ncat
 :exit
 exit
-
-
-
-
