@@ -6,7 +6,7 @@ goto :Ping1.bat
 :Ping1.bat
 cls
 timeout /t 0 > nul
-set /p Ping.bat="Type IP or host or e / E to exit: "
+set /p Ping.bat="Type IP or host or e/E to exit: "
 timeout /t 0 > nul
 cls
 goto :IFs
