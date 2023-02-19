@@ -6,7 +6,7 @@ goto :Type_the_OPERATION
 :Type_the_OPERATION
 cls
 timeout /t 1 > nul
-set /p Type_the_OPERATION="Type the operation (+, -, *, /) you want to perform or e / E to exit: "
+set /p Type_the_OPERATION="Type the operation (+, -, *, /) you want to perform or e/E to exit: "
 timeout /t 1 > nul
 cls
 goto :IFs_OPERATIONS
