@@ -1,5 +1,5 @@
 @echo off
-title Administrator mode ENABLE or DESABLE.bat
+title Administrator mode ENABLE or DISABLE.bat
 mode con cols=46 lines=11
 color 0a
 goto :menu
