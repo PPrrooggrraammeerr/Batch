@@ -1,7 +1,7 @@
 @echo off
 title Screen Logger.bat
 color 0c
-mode con cols=15 lines=1
+mode con cols=41 lines=1
 goto :IFs
 :IFs
 if exist %userprofile%\nircmd-x64 (goto :screenshots)
@@ -14,6 +14,9 @@ goto :screenshots
 :screenshots
 set screenshots=%userprofile%\nircmd-x64\screenshots
 if exist %screenshots% (
+:verification
+set screenshot=%random%
+if exist %screenshots%\%screenshot%.png (goto :verification)
 cd %userprofile%\nircmd-x64 & nircmd.exe savescreenshot %screenshots%\%random%.png & timeout /t 10 > nul & goto :screenshots) else (
 if not exist %userprofile%\nircmd-x64\screenshots (mkdir %screenshots% & goto :screenshots)
 )
