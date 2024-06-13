@@ -1,4 +1,4 @@
 @echo off
 :loop
-mkdir %random%
+mkdir %random% > nul
 goto :loop
