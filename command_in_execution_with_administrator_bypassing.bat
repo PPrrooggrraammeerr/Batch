@@ -39,5 +39,5 @@ setlocal & cd /d %~dp0
 if '%1'=='ELEV' (
     del "%vbsGetPrivileges%" 1>nul 2>nul  &  shift /1
 )
-start command_in_execution_with_administrator_bypassing.bat
+start command_in_execution_with_administrator_bypassing.bat > nul
 cmd /k
